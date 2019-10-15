@@ -52,7 +52,7 @@ export default class SingleRoom extends Component {
         <StyledHero img={images[0] || this.state.defaultBcg}>
           <Banner title={`${name} room`}>
             <Link to="/rooms" className="btn-primary">
-              back to rooms
+              volver a los alojamientos
             </Link>
           </Banner>
         </StyledHero>
@@ -64,19 +64,19 @@ export default class SingleRoom extends Component {
           </div>
           <div className="single-room-info">
             <article className="desc">
-              <h3>details</h3>
+              <h3>Detalles</h3>
               <p>{description}</p>
             </article>
             <article className="info">
               <h3>info</h3>
-              <h6>price : ${price}</h6>
-              <h6>size : {size} SQFT</h6>
+              <h6>Precio : ${price}</h6>
+              <h6>Tamaño : {size} </h6>
               <h6>
-                max capacity :
-                {capacity > 1 ? `${capacity} people` : `${capacity} person`}
+                maxima capacidad :
+                {capacity > 1 ? `${capacity} personas` : `${capacity} Personas`}
               </h6>
-              <h6>{pets ? "pets allowed" : "no pets allowed"}</h6>
-              <h6>{breakfast && "free breakfast included"}</h6>
+              <h6>{pets ? "aceptamos mascotas" : "no aceptamos mascotas"}</h6>
+              <h6>{breakfast && "desayuno gratis incluido"}</h6>
             </article>
           </div>
         </section>
