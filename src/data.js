@@ -1,14 +1,38 @@
-
+import room1 from "./images/details-1.jpeg";
 import room2 from "./images/details-2.jpeg";
 import room3 from "./images/details-3.jpeg";
 import room4 from "./images/details-4.jpeg";
+import room5 from "./images/details-5.jpeg";
+import room6 from "./images/details-6.jpeg";
+import room7 from "./images/details-7.jpeg";
+import room8 from "./images/details-8.jpeg";
+import room9 from "./images/details-9.jpeg";
+import room10 from "./images/details-10.jpeg";
+import room11 from "./images/details-11.jpeg";
+import room12 from "./images/details-12.jpeg";
+import room13 from "./images/details-13.jpeg";
+import room14 from "./images/details-14.jpeg";
+import room15 from "./images/details-15.jpeg";
+import room16 from "./images/details-16.jpeg";
+import room17 from "./images/details-17.jpeg";
+import room18 from "./images/details-18.jpeg";
+import room19 from "./images/details-19.jpeg";
+import room20 from "./images/details-20.jpeg";
+import room21 from "./images/details-21.jpeg";
+
 import img1 from "./images/room-1.jpeg";
 import img2 from "./images/room-2.jpeg";
 import img3 from "./images/room-3.jpeg";
+import img4 from "./images/room-4.jpeg";
+import img5 from "./images/room-5.jpeg";
 import img6 from "./images/room-6.jpeg";
 import img7 from "./images/room-7.jpeg";
-import img8 from "./images/room-8.jpeg";
-import img9 from "./images/room-9.jpeg";
+
+
+
+
+
+
 
 export default [
   {
@@ -47,6 +71,13 @@ export default [
         {
           fields: {
             file: {
+              url: room1
+            }
+          }
+        },
+        {
+          fields: {
+            file: {
               url: room2
             }
           }
@@ -55,13 +86,6 @@ export default [
           fields: {
             file: {
               url: room3
-            }
-          }
-        },
-        {
-          fields: {
-            file: {
-              url: room4
             }
           }
         }
@@ -104,21 +128,21 @@ export default [
         {
           fields: {
             file: {
-              url: room2
-            }
-          }
-        },
-        {
-          fields: {
-            file: {
-              url: room3
-            }
-          }
-        },
-        {
-          fields: {
-            file: {
               url: room4
+            }
+          }
+        },
+        {
+          fields: {
+            file: {
+              url: room5
+            }
+          }
+        },
+        {
+          fields: {
+            file: {
+              url: room6
             }
           }
         }
@@ -135,7 +159,7 @@ export default [
       type: "double",
       price: 600,
       size: 38,
-      capacity: [1,2],
+      capacity: 2,
       pets: true,
       breakfast: false,
       featured: false,
@@ -161,21 +185,21 @@ export default [
         {
           fields: {
             file: {
-              url: room2
+              url: room7
             }
           }
         },
         {
           fields: {
             file: {
-              url: room3
+              url: room8
             }
           }
         },
         {
           fields: {
             file: {
-              url: room4
+              url: room9
             }
           }
         }
@@ -211,28 +235,28 @@ export default [
         {
           fields: {
             file: {
-              url: img7
+              url: img4
             }
           }
         },
         {
           fields: {
             file: {
-              url: room2
+              url: room10
             }
           }
         },
         {
           fields: {
             file: {
-              url: room3
+              url: room11
             }
           }
         },
         {
           fields: {
             file: {
-              url: room4
+              url: room12
             }
           }
         }
@@ -275,21 +299,21 @@ export default [
         {
           fields: {
             file: {
-              url: room2
+              url: room13
             }
           }
         },
         {
           fields: {
             file: {
-              url: room3
+              url: room14
             }
           }
         },
         {
           fields: {
             file: {
-              url: room4
+              url: room15
             }
           }
         }
@@ -325,28 +349,28 @@ export default [
         {
           fields: {
             file: {
-              url: img9
+              url: img5
             }
           }
         },
         {
           fields: {
             file: {
-              url: room2
+              url: room16
             }
           }
         },
         {
           fields: {
             file: {
-              url: room3
+              url: room17
             }
           }
         },
         {
           fields: {
             file: {
-              url: room4
+              url: room18
             }
           }
         }
@@ -382,28 +406,28 @@ export default [
         {
           fields: {
             file: {
-              url: img8
+              url: img7
             }
           }
         },
         {
           fields: {
             file: {
-              url: room2
+              url: room19
             }
           }
         },
         {
           fields: {
             file: {
-              url: room3
+              url: room20
             }
           }
         },
         {
           fields: {
             file: {
-              url: room4
+              url: room21
             }
           }
         }
