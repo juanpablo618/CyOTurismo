@@ -1,14 +1,14 @@
 import React, { Component } from "react";
-import { FaCocktail, FaHiking, FaShuttleVan, FaBeer } from "react-icons/fa";
+import { FaCoffee, FaHiking, FaShuttleVan, FaBeer } from "react-icons/fa";
 import Title from "./Title";
 export default class Services extends Component {
   state = {
     services: [
       {
-        icon: <FaCocktail />,
-        title: "Free Cocktails",
+        icon: <FaCoffee />,
+        title: "Desayuno gratis",
         info:
-          "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Alias molestias eius libero?"
+          "Algunos de nuestros alojamientos cuentan con desayuno gratis. Para empezar muy bien el día y con una sonrisa."
       },
       {
         icon: <FaHiking />,

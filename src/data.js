@@ -211,7 +211,7 @@ export default [
       id: "4"
     },
     fields: {
-      name: "doble standard / H. La porteña",
+      name: "Doble / H. La porteña / Villa la Serranita",
       slug: "doble-standard",
       type: "double",
       price: 1800,
@@ -268,8 +268,8 @@ export default [
       id: "5"
     },
     fields: {
-      name: "triple standard / H. La Porteña",
-      slug: "double-basic",
+      name: "Triple / H. La Porteña / Villa La Serranita",
+      slug: "triple",
       type: "triple",
       price: 2700,
       size: 250,
@@ -325,7 +325,7 @@ export default [
       id: "6"
     },
     fields: {
-      name: "Cuadruple Standar / H. La Porteña",
+      name: "Cuadruple / H. La Porteña / Villa La Serranita",
       slug: "family-economy",
       type: "family",
       price: 3600,
@@ -384,7 +384,7 @@ export default [
     fields: {
       name: "Cabaña Elvira / Río Ceballos",
       slug: "Cabaña Elvira",
-      type: "cuadruple",
+      type: "family",
       price: 2100,
       size: 500,
       capacity: 4,
