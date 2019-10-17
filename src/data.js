@@ -42,7 +42,7 @@ export default [
     fields: {
       name: "Depto Oncativo 1 / Cba Capital",
       slug: "Depto Oncativo 1",
-      type: "double",
+      type: "doble",
       price: 600,
       size: 38,
       capacity: 2,
@@ -99,7 +99,7 @@ export default [
     fields: {
       name: "Depto Oncativo 2 / Cba Capital",
       slug: "Depto Oncativo 2",
-      type: "double",
+      type: "doble",
       price: 600,
       size: 38,
       capacity: 2,
@@ -156,7 +156,7 @@ export default [
     fields: {
       name: "Depto Oncativo 3 / Cba Capital",
       slug: "Depto Oncativo 3",
-      type: "double",
+      type: "doble",
       price: 600,
       size: 38,
       capacity: 2,
@@ -213,7 +213,7 @@ export default [
     fields: {
       name: "Doble / H. La porteña / Villa la Serranita",
       slug: "doble-standard",
-      type: "double",
+      type: "doble",
       price: 1800,
       size: 100,
       capacity: 2,
