@@ -6,6 +6,7 @@ import { RoomContext } from "../context";
 
 import StyledHero from "../components/StyledHero";
 export default class SingleRoom extends Component {
+  
   constructor(props) {
     super(props);
     console.log(this.props);
@@ -26,9 +27,9 @@ export default class SingleRoom extends Component {
     if (!room) {
       return (
         <div className="error">
-          <h3> no such room could be found...</h3>
+          <h3> no se pudo encontrar la habitación...</h3>
           <Link to="/rooms" className="btn-primary">
-            back to rooms
+            volver a los alojamientos
           </Link>
         </div>
       );
@@ -37,7 +38,6 @@ export default class SingleRoom extends Component {
       name,
       description,
       capacity,
-      size,
       price,
       extras,
       breakfast,
@@ -66,7 +66,14 @@ export default class SingleRoom extends Component {
             <article className="desc">
               <h3>Detalles</h3>
               <p>{description}</p>
+            <p>
+              <Link to={`/reservations/${room.slug}`}  className="btn-primary">
+              Solicitar Reserva
+              </Link>
+
+            </p>
             </article>
+
             <article className="info">
               <h3>info</h3>
               <h6>Precio : ${price}</h6>

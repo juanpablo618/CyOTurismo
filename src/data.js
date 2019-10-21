@@ -28,12 +28,6 @@ import img5 from "./images/room-5.jpeg";
 import img6 from "./images/room-6.jpeg";
 import img7 from "./images/room-7.jpeg";
 
-
-
-
-
-
-
 export default [
   {
     sys: {
