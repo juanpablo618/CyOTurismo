@@ -4,7 +4,7 @@ const RoomsList = ({ rooms }) => {
   if (rooms.length === 0) {
     return (
       <div className="empty-search">
-        <h3>Desafortunadamente no encontramos Alojamientos con los filtros que proporcionaste</h3>
+        <h4>Desafortunadamente no encontramos alojamientos con los filtros que proporcionaste...</h4>
       </div>
     );
   }

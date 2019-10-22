@@ -10,20 +10,18 @@ class ReservationForm extends React.Component {
      fEgreso: "",
      cantPersonas: "", 
      serviciosAdicionales: "",
-     KeyRoom:""
-    
+     keyRoom: this.props.keyRoom
     };
   }
 
-  componentWillMount() {
+    componentDidMount() {
     console.log("ACA:");
-    console.log(this.props);
-
-  }
+    console.log(this.props.keyRoom);
+    }
   
   handleForm = e => {
     axios.post(
-        "https://formcarry.com/s/yourFormId", 
+        "https://formcarry.com/reservations/yourFormId", 
         this.state, 
         {headers: {"Accept": "application/json"}}
       )
@@ -53,24 +51,21 @@ class ReservationForm extends React.Component {
     const { getRoom } = this.context;
     const room = getRoom(this.state.slug);
 
-    return (
+  return (
       <center>
         <form onSubmit={this.handleForm}>
               <br></br>
         <label htmlFor="fIngreso">Fecha de ingreso:</label><br></br>
-        <input type="text" id="fIngreso" name="fIngreso" onChange={this.handleFields} /><br></br><br></br>
-        
-        <label htmlFor="fEgreso">Fecha de egreso:</label><br></br>
-        <input type="text" id="fEgreso" name="fEgreso" onChange={this.handleFields} /><br></br><br></br>
- 
-        <label htmlFor="cantPersonas">Cantidad de personas</label><br></br>
-        <input type="text" id="cantPersonas" name="cantPersonas" onChange={this.handleFields} /><br></br><br></br>
- 
-        <label htmlFor="serviciosAdicionales">¿Algun servicio en especial ?</label><br></br>
-        <textarea name="serviciosAdicionales" id="serviciosAdicionales" onChange={this.handleFields}></textarea><br></br><br></br>
-        
-        <input type="hidden" id="KeyRoom" name="KeyRoom" value='${this.room}' />
+        <input type="date" id="fIngreso" name="fIngreso" required="true" onChange={this.handleFields}/><br></br><br></br>
 
+        <label htmlFor="fEgreso">Fecha de egreso:</label><br></br>
+        <input type="date" id="fEgreso" name="fEgreso" required="true" onChange={this.handleFields}/><br></br><br></br>
+
+        <label htmlFor="cantPersonas">Cantidad de personas</label><br></br>
+        <input type="number" id="cantPersonas" name="cantPersonas" required="true" onChange={this.handleFields} min="1" max="20" /><br></br><br></br>
+
+        <label htmlFor="serviciosAdicionales">¿ Algun servicio adicional más ?</label><br></br>
+        <textarea name="serviciosAdicionales" id="serviciosAdicionales" onChange={this.handleFields}></textarea><br></br><br></br>
 
         <button type="submit" className="btn-primary">Enviar</button>
       </form>
