@@ -427,5 +427,61 @@ export default [
         }
       ]
     }
+  },
+  {
+    sys: {
+      id: "7"
+    },
+    fields: {
+      name: "Depto. Nuevo con excelente ubicación en Córdoba",
+      slug: "Depto en Nueva Cba",
+      type: "family",
+      price: 2100,
+      size: 500,
+      capacity: 4,
+      pets: true,
+      breakfast: false,
+      featured: true,
+      description:
+        "Excelente departamento ubicado en pleno Nueva Córdoba. A 8 cuadras del Casco Histórico. Acceso directo a Ciudad Universitaria y a centros culturales como, Museo Caraffa (800m), Museo Palacio Ferreira (600m); Parque Sarmiento (1 km), Parque de las Tejas (1 Km), Paseo del Buen pastor (300m) que se encuntra rodeado de bares, al conocido Shopping Patio Olmos (500m), al Espacio Quality (2Km), al Paseo de las Artes (300m) y centros asistenciales de salud como Oulton (260m) y Sanatorio Allende (290m)",
+      extras: [
+        "Ropa Blanca incluida",
+        "Toallas de baño suaves y de gran tamaño",
+        "Articulos de baño, jabón y shampoo",
+        "Heladera, cocina equipada",
+        "Seguridad y protección adecuada"
+        
+      ],
+      images: [
+        {
+          fields: {
+            file: {
+              url: img7
+            }
+          }
+        },
+        {
+          fields: {
+            file: {
+              url: room22
+            }
+          }
+        },
+        {
+          fields: {
+            file: {
+              url: room23
+            }
+          }
+        },
+        {
+          fields: {
+            file: {
+              url: room24
+            }
+          }
+        }
+      ]
+    }
   }
 ];

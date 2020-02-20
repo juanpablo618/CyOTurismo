@@ -21,7 +21,7 @@ class ReservationForm extends React.Component {
   
   handleForm = e => {
     axios.post(
-        "https://formcarry.com/reservations/yourFormId", 
+        "https://localhost:8080/api/hola", 
         this.state, 
         {headers: {"Accept": "application/json"}}
       )
@@ -48,8 +48,6 @@ class ReservationForm extends React.Component {
   static contextType = RoomContext;
 
   render() {
-    const { getRoom } = this.context;
-    const room = getRoom(this.state.slug);
 
   return (
       <center>
