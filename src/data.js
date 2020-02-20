@@ -19,6 +19,9 @@ import room18 from "./images/details-18.jpeg";
 import room19 from "./images/details-19.jpeg";
 import room20 from "./images/details-20.jpeg";
 import room21 from "./images/details-21.jpeg";
+import room22 from "./images/details-22.png";
+import room23 from "./images/details-23.png";
+import room24 from "./images/details-24.png";
 
 import img1 from "./images/room-1.jpeg";
 import img2 from "./images/room-2.jpeg";
@@ -27,6 +30,7 @@ import img4 from "./images/room-4.jpeg";
 import img5 from "./images/room-5.jpeg";
 import img6 from "./images/room-6.jpeg";
 import img7 from "./images/room-7.jpeg";
+import img8 from "./images/room-8.png";
 
 export default [
   {
@@ -389,7 +393,7 @@ export default [
         "Hermosa cabaña equipada con jacuzzi, pileta al aire libre, quincho, asador, predio gigante, aceptamos mascotas",
       extras: [
         "Ropa Blanca incluida",
-        "Toallas de baño suaves y de gran tamaño",
+        "Toallas de baño",
         "Articulos de baño, jabón y shampoo",
         "Heladera, cocina equipada",
         "Seguridad y protección adecuada",
@@ -436,27 +440,30 @@ export default [
       name: "Depto. Nuevo con excelente ubicación en Córdoba",
       slug: "Depto en Nueva Cba",
       type: "family",
-      price: 2100,
+      price: 1900,
       size: 500,
-      capacity: 4,
-      pets: true,
+      capacity: 2,
+      pets: false,
       breakfast: false,
       featured: true,
       description:
         "Excelente departamento ubicado en pleno Nueva Córdoba. A 8 cuadras del Casco Histórico. Acceso directo a Ciudad Universitaria y a centros culturales como, Museo Caraffa (800m), Museo Palacio Ferreira (600m); Parque Sarmiento (1 km), Parque de las Tejas (1 Km), Paseo del Buen pastor (300m) que se encuntra rodeado de bares, al conocido Shopping Patio Olmos (500m), al Espacio Quality (2Km), al Paseo de las Artes (300m) y centros asistenciales de salud como Oulton (260m) y Sanatorio Allende (290m)",
       extras: [
+        "A partir de 3 personas son otras tarifas",
         "Ropa Blanca incluida",
-        "Toallas de baño suaves y de gran tamaño",
+        "Toallas de baño",
         "Articulos de baño, jabón y shampoo",
         "Heladera, cocina equipada",
-        "Seguridad y protección adecuada"
+        "Seguridad y protección adecuada",
+        "Aire acondicionado",
+        "Tv y wifi"
         
       ],
       images: [
         {
           fields: {
             file: {
-              url: img7
+              url: img8
             }
           }
         },
