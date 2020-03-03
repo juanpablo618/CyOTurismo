@@ -32,8 +32,12 @@ class ReservationForm extends React.Component {
 
       .then((result) => {
           console.log(result.text);
+          alert("NOS PONDREMOS EN CONTACTO PRONTO, GRACIAS POR SU VISITA. Dudas: 0351-153220999.");  // display string message
+
       }, (error) => {
           console.log(error.text);
+          alert("No fue posible el envio de su mensaje. Puede hacerlo a través de los teléfonos: 0351-153220999 / 0351-156744400.");  // display string message
+
       });
 
 
