@@ -9,7 +9,6 @@ class ReservationForm extends React.Component {
     super(props);
     this.state = {fIngreso: "", 
      fEgreso: "",
-     from_name:"",
      cantPersonas: "", 
      serviciosAdicionales: "",
      keyRoom: this.props.keyRoom
@@ -21,22 +20,44 @@ class ReservationForm extends React.Component {
     console.log(this.props.keyRoom);
     }
   
-  sendEmail(e,self) {
+  handleForm = e => {
+    axios.post(
+        "https://localhost:8080/api/hola", 
+        this.state, 
+        {headers: {"Accept": "application/json"}}
+      )
+      .then(function (response) {
+        
+        // access response.data in order to check formcarry response
+        if(response.data.success){
+          // handle success
+        } else {
+          // handle error
+          console.log(response.data.message);
+        }
+ 
+      })
+      .catch(function (error) {
+        console.log(error);
+      });
+    
+    e.preventDefault();
+  }
+
+
+  sendEmail(e) {
     e.preventDefault();
 
-  //  console.log(e.target);
-    console.log(e);
-
-    console.log(self);
+    console.log(this.handleFields);
+    
     emailjs.sendForm('gmail', 'template_czOUzjOc', e.target, 'user_58UT0Oeu5MmFFx61uWkmG')
+
 
       .then((result) => {
           console.log(result.text);
       }, (error) => {
           console.log(error.text);
       });
-
-
   }
 
  
@@ -49,11 +70,8 @@ class ReservationForm extends React.Component {
   return (
       
       <center>
-        <form onSubmit={(e)=>this.sendEmail(e,this)}>
+        <form onSubmit={this.handleForm}>
               <br></br>
-        <label htmlFor="from_name">Nombre y apellido:</label><br></br>
-        <input  id="from_name" name="from_name" required="true" onChange={this.handleFields}/><br></br><br></br>
-
         <label htmlFor="fIngreso">Fecha de ingreso:</label><br></br>
         <input type="date" id="fIngreso" name="fIngreso" required="true" onChange={this.handleFields}/><br></br><br></br>
 
@@ -62,9 +80,6 @@ class ReservationForm extends React.Component {
 
         <label htmlFor="cantPersonas">Cantidad de personas</label><br></br>
         <input type="number" id="cantPersonas" name="cantPersonas" required="true" onChange={this.handleFields} min="1" max="20" /><br></br><br></br>
-
-        <label htmlFor="keyRoom">Establecimiento</label><br></br>
-        <input  id="keyRoom" name="keyRoom" required="true" value={this.props.keyRoom} readOnly="true" min="1" max="20" /><br></br><br></br>
 
         <label htmlFor="serviciosAdicionales">¿ Algun servicio adicional más ?</label><br></br>
         <textarea name="serviciosAdicionales" id="serviciosAdicionales" onChange={this.handleFields}></textarea><br></br><br></br>
