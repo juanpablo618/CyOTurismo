@@ -2,7 +2,7 @@ import React from "react";
 import { RoomContext } from "../context";
 import emailjs from 'emailjs-com';
 
-class ReservationForm extends React.Component {
+class ContactForm extends React.Component {
 
   constructor(props){
     super(props);
@@ -65,19 +65,7 @@ class ReservationForm extends React.Component {
         <label htmlFor="from_name">Email:</label><br></br>
         <input  id="email" name="email" required="false" onChange={this.handleFields}/><br></br><br></br>
 
-        <label htmlFor="fIngreso">Fecha de ingreso:</label><br></br>
-        <input type="date" id="fIngreso" name="fIngreso" required="true" onChange={this.handleFields}/><br></br><br></br>
-
-        <label htmlFor="fEgreso">Fecha de egreso:</label><br></br>
-        <input type="date" id="fEgreso" name="fEgreso" required="true" onChange={this.handleFields}/><br></br><br></br>
-
-        <label htmlFor="cantPersonas">Cantidad de personas</label><br></br>
-        <input type="number" id="cantPersonas" name="cantPersonas" required="true" onChange={this.handleFields} min="1" max="20" /><br></br><br></br>
-
-        <label htmlFor="keyRoom">Establecimiento</label><br></br>
-        <input  id="keyRoom" name="keyRoom" required="true" value={this.props.keyRoom} readOnly="true" min="1" max="20" /><br></br><br></br>
-
-        <label htmlFor="serviciosAdicionales">¿ Algun servicio adicional más ?</label><br></br>
+        <label htmlFor="serviciosAdicionales">Mensaje:</label><br></br>
         <textarea name="serviciosAdicionales" id="serviciosAdicionales" onChange={this.handleFields}></textarea><br></br><br></br>
 
         <button type="submit" className="btn-primary">Enviar</button>
@@ -89,4 +77,4 @@ class ReservationForm extends React.Component {
   }
 }
  
-export default ReservationForm;
+export default ContactForm;

@@ -3,7 +3,9 @@ import "./App.css";
 
 import Home from "./pages/Home";
 import Rooms from "./pages/Rooms";
+import Contacto from "./pages/Contacto";
 import Reservations from "./pages/Reservations";
+import ContactForm from "./components/ContactForm";
 
 import SingleRoom from "./pages/SingleRoom";
 import Error from "./pages/Error";
@@ -19,7 +21,9 @@ function App() {
       <Switch>
         <Route exact path="/" component={Home} />
         <Route exact path="/rooms/" component={Rooms} />
+        <Route exact path="/contacto/" component={Contacto} />
         <Route exact path="/reservations/:slug" component={Reservations} />
+        <Route exact path="/contactForm/" component={ContactForm} />
         <Route exact path="/rooms/:slug" component={SingleRoom} />
         <Route component={Error} />
       </Switch>

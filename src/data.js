@@ -442,7 +442,7 @@ export default [
       type: "family",
       price: 1900,
       size: 500,
-      capacity: 2,
+      capacity: 4,
       pets: false,
       breakfast: false,
       featured: true,
