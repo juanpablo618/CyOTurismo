@@ -10,7 +10,27 @@ const Contacto = () => {
     <>
       <Hero hero="roomsHero">
         <Banner title="CyO Turismo">
-          <p>La Agencia CyO Turismo está dedicada al Alquiler de departamentos temporarios  completamente amoblados en los principales barrios de la Ciudad de Córdoba Argentina. Para todos aquellos huéspedes que lleguen por motivo de negocios, por estudios o por placer CyO Turismo buscará siempre la mejor opción para cada necesidad.</p>
+          
+
+          <p>
+          Cada cliente tiene diferentes métodos y prioridades de viaje. 
+          Los agentes de CyO Turismo tienen varias áreas de experiencia para resolver cualquier necesidad de viaje. Si está planeando su próximo viaje de trabajo o placer, hacemos que su proceso de reservación sea fácil y agradable.
+          ¡Llámenos hoy y comience a viajar! Contamos con:
+          </p>
+
+          <p>Alquiler de departamentos temporarios completamente amoblados en los principales barrios de la Ciudad de Córdoba. </p>
+          <p>Cabaña familiar en las sierras.</p>
+          <p>Hostería en las sierras de Córdoba.</p>          
+          <p>Para todos aquellos huéspedes que lleguen por motivo de negocios, por estudios o por placer CyO Turismo buscará siempre la mejor opción para cada necesidad.</p>
+
+          
+
+
+
+
+
+
+
 
           <p>Ubicación:</p>
           <p>Colón 610 (solo con aviso previo) - Córdoba - Argentina</p>

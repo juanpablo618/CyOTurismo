@@ -1,6 +1,8 @@
 import React from "react";
 import { RoomContext } from "../context";
 import emailjs from 'emailjs-com';
+import Hero from "../components/Hero";
+import Banner from "./Banner";
 
 class ContactForm extends React.Component {
 
@@ -52,27 +54,29 @@ class ContactForm extends React.Component {
   render() {
 
   return (
-      
-      <center>
-        <form onSubmit={(e)=>this.sendEmail(e,this)}>
-              <br></br>
-        <label htmlFor="from_name">Nombre y apellido:</label><br></br>
-        <input  id="from_name" name="from_name" required="true" onChange={this.handleFields}/><br></br><br></br>
+      <Hero>
+      <Banner>
+          <center>
+            <form onSubmit={(e)=>this.sendEmail(e,this)}>
+                  <br></br>
+            <label htmlFor="from_name">Nombre y apellido:</label><br></br>
+            <input  id="from_name" name="from_name" required="true" onChange={this.handleFields}/><br></br><br></br>
 
-        <label htmlFor="from_name">Teléfono:</label><br></br>
-        <input  id="telefono" name="telefono" required="true" onChange={this.handleFields}/><br></br><br></br>
+            <label htmlFor="from_name">Teléfono:</label><br></br>
+            <input  id="telefono" name="telefono" required="true" onChange={this.handleFields}/><br></br><br></br>
 
-        <label htmlFor="from_name">Email:</label><br></br>
-        <input  id="email" name="email" required="false" onChange={this.handleFields}/><br></br><br></br>
+            <label htmlFor="from_name">Email:</label><br></br>
+            <input  id="email" name="email" required="false" onChange={this.handleFields}/><br></br><br></br>
 
-        <label htmlFor="serviciosAdicionales">Mensaje:</label><br></br>
-        <textarea name="serviciosAdicionales" id="serviciosAdicionales" onChange={this.handleFields}></textarea><br></br><br></br>
+            <label htmlFor="serviciosAdicionales">Mensaje:</label><br></br>
+            <textarea name="serviciosAdicionales" id="serviciosAdicionales" rows="15" cols="50" onChange={this.handleFields}></textarea><br></br><br></br>
 
-        <button type="submit" className="btn-primary">Enviar</button>
-      </form>
-      <br></br>
-      </center>
-  
+            <button type="submit" className="btn-primary">Enviar</button>
+          </form>
+          <br></br>
+          </center>
+        </Banner>
+      </Hero>
     );
   }
 }

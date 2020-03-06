@@ -105,7 +105,7 @@ export default [
       breakfast: false,
       featured: false,
       description:
-        "Depto ubicado en calle Oncativo 1551. depto 2",
+        "Depto ubicado en calle Oncativo 1551. depto 2, ubicado en calle Oncativo 1551 Barrio Gral Paz, Córdoba - Arg.",
       extras: [
         "Aire acondicionado frio/calor",
         "camas simple o cama doble",
@@ -162,7 +162,7 @@ export default [
       breakfast: false,
       featured: false,
       description:
-        "Depto ubicado en calle Oncativo 1551. depto 3, con todas las comodidades para que disfrutes de Córdoba.",
+        "Depto ubicado en calle Oncativo 1551, barrio Gral Paz, depto 3. Con todas las comodidades para que disfrutes de Córdoba Capital.",
       extras: [
         "Baño privado",
         "a 20 cuadras del centro y la terminal de colectivos",
@@ -212,14 +212,14 @@ export default [
       name: "Doble / H. La porteña / Villa la Serranita",
       slug: "doble-standard",
       type: "doble",
-      price: 1800,
+      price: 2300,
       size: 100,
       capacity: 2,
       pets: true,
       breakfast: true,
       featured: true,
       description:
-        "Habitación doble con baño privado en hostería la porteña",
+        "Habitación doble con baño privado en hostería La Porteña ubicada en la localidad de La Serranita a 60 km de Córdoba Capital. Más infomación en www.laportenahosteria.com.ar",
       extras: [
         "2 camas simples o 1 cama doble",
         "Baño privado",
@@ -276,7 +276,7 @@ export default [
       breakfast: true,
       featured: false,
       description:
-        "Hab. triple en Hostería La Porteña.",
+        "Hab. triple en Hostería La Porteña ubicada a 60 km de Córdoba Capital. Más infomación en www.laportenahosteria.com.ar",
       extras: [
         "Cuenta con una cama doble y una cama simple",
         "Ropa blanca y art. para el baño como jabones y shampoo",
@@ -326,14 +326,14 @@ export default [
       name: "Cuadruple / H. La Porteña / Villa La Serranita",
       slug: "family-economy",
       type: "family",
-      price: 3600,
+      price: 3500,
       size: 500,
       capacity: 4,
       pets: true,
       breakfast: true,
       featured: false,
       description:
-        "Hab. cuadruple en Hostería La Porteña, cuenta con una cama doble y dos camas simples",
+        "Hab. cuadruple en Hostería La Porteña ubicada a 60 km de Córdoba Capital. Cuenta con una cama doble y dos camas simples. Más infomación en www.laportenahosteria.com.ar",
       extras: [
         "Ropa blanca y art. para el baño, jabones y shampoo,",
         "Ropa blanca y limpieza diaria,",
@@ -383,14 +383,14 @@ export default [
       name: "Cabaña Elvira / Río Ceballos",
       slug: "Cabaña Elvira",
       type: "family",
-      price: 2100,
+      price: 3500,
       size: 500,
       capacity: 4,
       pets: true,
       breakfast: false,
       featured: true,
       description:
-        "Hermosa cabaña equipada con jacuzzi, pileta al aire libre, quincho, asador, predio gigante, aceptamos mascotas",
+        "Hermosa cabaña equipada con jacuzzi, pileta al aire libre, quincho, asador, predio gigante, aceptamos mascotas, está ubicada en calle los Robles 2142 Villa los Altos de Río Ceballos.",
       extras: [
         "Ropa Blanca incluida",
         "Toallas de baño",
@@ -434,7 +434,7 @@ export default [
   },
   {
     sys: {
-      id: "7"
+      id: "8"
     },
     fields: {
       name: "Depto. Nuevo con excelente ubicación en Córdoba",
@@ -447,7 +447,7 @@ export default [
       breakfast: false,
       featured: true,
       description:
-        "Excelente departamento ubicado en pleno Nueva Córdoba. A 8 cuadras del Casco Histórico. Acceso directo a Ciudad Universitaria y a centros culturales como, Museo Caraffa (800m), Museo Palacio Ferreira (600m); Parque Sarmiento (1 km), Parque de las Tejas (1 Km), Paseo del Buen pastor (300m) que se encuntra rodeado de bares, al conocido Shopping Patio Olmos (500m), al Espacio Quality (2Km), al Paseo de las Artes (300m) y centros asistenciales de salud como Oulton (260m) y Sanatorio Allende (290m)",
+        "Excelente departamento ubicado en pleno Nueva Córdoba. A 8 cuadras del Casco Histórico (Laprida 100). Acceso directo a Ciudad Universitaria y a centros culturales como, Museo Caraffa (800m), Museo Palacio Ferreira (600m); Parque Sarmiento (1 km), Parque de las Tejas (1 Km), Paseo del Buen pastor (300m) que se encuntra rodeado de bares, al conocido Shopping Patio Olmos (500m), al Espacio Quality (2Km), al Paseo de las Artes (300m) y centros asistenciales de salud como Oulton (260m) y Sanatorio Allende (290m)",
       extras: [
         "A partir de 3 personas son otras tarifas",
         "Ropa Blanca incluida",
@@ -457,7 +457,6 @@ export default [
         "Seguridad y protección adecuada",
         "Aire acondicionado",
         "Tv y wifi"
-        
       ],
       images: [
         {
