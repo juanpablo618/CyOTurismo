@@ -10,7 +10,6 @@ const Contacto = () => {
     <>
       <Hero hero="roomsHero">
         <Banner title="CyO Turismo">
-          
 
           <p>
           Cada cliente tiene diferentes métodos y prioridades de viaje. 
@@ -23,15 +22,6 @@ const Contacto = () => {
           <p>Hostería en las sierras de Córdoba.</p>          
           <p>Para todos aquellos huéspedes que lleguen por motivo de negocios, por estudios o por placer CyO Turismo buscará siempre la mejor opción para cada necesidad.</p>
 
-          
-
-
-
-
-
-
-
-
           <p>Ubicación:</p>
           <p>Colón 610 (solo con aviso previo) - Córdoba - Argentina</p>
 
@@ -42,12 +32,10 @@ const Contacto = () => {
           <p>Aceptamos todos los medios de pago.</p>
 
           <img src={mediosDePago} alt="CyO Turismo" width="1000" height="150" /><br></br>
-
           
           <Link to="contactForm/" className="btn-primary">
             Hable con nosotros
           </Link>
-         
 
           <br></br>
           <br></br>
