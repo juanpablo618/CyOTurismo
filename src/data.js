@@ -27,6 +27,7 @@ import img4 from "./images/room-4.jpeg";
 import img5 from "./images/room-5.jpeg";
 import img6 from "./images/room-6.jpeg";
 import img7 from "./images/room-7.jpeg";
+import img8 from "./images/room-8.jpeg";
 
 export default [
   {
@@ -456,7 +457,7 @@ export default [
         {
           fields: {
             file: {
-              url: img7
+              url: img8
             }
           }
         },
