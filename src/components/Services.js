@@ -6,9 +6,9 @@ export default class Services extends Component {
     services: [
       {
         icon: <FaCoffee />,
-        title: "Desayuno gratis",
+        title: "Profesionalidad",
         info:
-          "Algunos de nuestros alojamientos cuentan con desayuno gratis. Para empezar muy bien el día y con una sonrisa."
+          "Contamos con Recursos Humanos capacitados y con vocación de servicio, trabajando en todo momento para cumplir con las expectativas tanto del propietario como así también de los huéspedes. Ofreciendo respuestas rápidas y a la medida de cada situación para que la estadía sea placentera."
       },
       {
         icon: <FaHiking />,
@@ -18,9 +18,9 @@ export default class Services extends Component {
       },
       {
         icon: <FaShuttleVan />,
-        title: "Servicio de translado",
+        title: "Servicio de traslado",
         info:
-          "Podemos buscarte en el aeropuerto o en la terminal. Estamos dispuestos a ayudarte en todo momento"
+          "Trabajamos con empresas de traslado de pasajeros, podemos buscarte en el aeropuerto o en la terminal. Estamos dispuestos a ayudarte en todo momento"
       },
       {
         icon: <FaBeer />,
