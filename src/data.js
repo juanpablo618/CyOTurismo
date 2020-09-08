@@ -56,6 +56,7 @@ export default [
         "Seguridad las 24 hs.",
         "Baño privado",
         "Internet",
+        "Tv con cable",
         "Cama Simples o doble"
       ],
       images: [
@@ -113,6 +114,7 @@ export default [
         "seguridad las 24 hs.",
         "Ropa blanca y limpieza diaria.",
         "Internet",
+        "Tv con cable",
         "Articulos para el baño, jabones y shampoo"
       ],
       images: [
@@ -170,6 +172,7 @@ export default [
         "Ropa blanca y limpieza diaria",
         "Seguridad las 24 hs",
         "Internet",
+        "Tv con cable",
         "Camas confortables"
       ],
       images: [
