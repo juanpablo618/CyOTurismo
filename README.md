@@ -66,3 +66,8 @@ This section has moved here: https://facebook.github.io/create-react-app/docs/de
 ### `npm run build` fails to minify
 
 This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
+
+
+### when fail on netlify app and the master branch doesn't work
+
+Edit: I found the solution. I updated yarn and all peer dependencies that were missing; deleted my cache (public folder, node_modules folder, .cache folder) and the yarn.lock, ran yarn install once again, pushed all changes and the site finally deployed just fine.
