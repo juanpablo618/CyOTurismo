@@ -29,22 +29,20 @@ class ContactForm extends React.Component {
     console.log(this.props.keyRoom);
     }
   
-  sendEmail(e,self) {
+  sendEmail(e) {
     e.preventDefault();
 
-  //  console.log(e.target);
     console.log(e);
 
-    console.log(self);
     emailjs.sendForm('service_x5jr1re', 'template_czOUzjOc', e.target, 'user_58UT0Oeu5MmFFx61uWkmG')
 
       .then((result) => {
           console.log(result.text);
-          alert("NOS PONDREMOS EN CONTACTO PRONTO, GRACIAS POR SU VISITA. Dudas: 0351-153220999.");  // display string message
+          alert("NOS2 PONDREMOS EN CONTACTO PRONTO, GRACIAS POR SU VISITA. Dudas: 0351-153220999.");  // display string message
 
       }, (error) => {
           console.log(error.text);
-          alert("No fue posible el envio de su mensaje. Puede hacerlo a través de los teléfonos: 0351-153220999 / 0351-156744400.");  // display string message
+          alert("No2 fue posible el envio de su mensaje. Puede hacerlo a través de los teléfonos: 0351-153220999 / 0351-156744400.");  // display string message
 
       });
 
@@ -68,7 +66,7 @@ class ContactForm extends React.Component {
           </center>
           <center>
             
-            <form onSubmit={(e)=>this.sendEmail(e,this)}>
+            <form onSubmit={(e)=>this.sendEmail(e)}>
                 <label htmlFor="from_name">Nombre y apellido:</label><br></br>
                 <input  id="from_name" name="from_name" required="true" onChange={this.handleFields}/><br></br><br></br>
 
