@@ -1,13 +1,12 @@
 import React from "react";
-import axios from "axios"; 
- 
- 
+import axios from "axios";
+
 class Form extends React.Component {
   constructor(props){
     super(props);
     this.state = {name: "", surname: "", email: "", message: ""};
   }
-  
+
   handleForm = e => {
     axios.post(
         "https://formcarry.com/s/yourFormId", 
@@ -23,17 +22,17 @@ class Form extends React.Component {
           // handle error
           console.log(response.data.message);
         }
- 
+
       })
       .catch(function (error) {
         console.log(error);
       });
-    
+
     e.preventDefault();
   }
- 
+
   handleFields = e => this.setState({ [e.target.name]: e.target.value });
- 
+
   render() {
     return (
       <form onSubmit={this.handleForm}>

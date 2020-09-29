@@ -5,14 +5,14 @@ import { Link } from "react-router-dom";
 import ReservationForm from "../components/ReservationForm";
 
 export default class Reservations extends Component {
-  
+
   constructor(props) {
     super(props);
     this.state = {
       slug: this.props.match.params.slug
     };
   };
-  
+
   render() {
       return (
           <div>

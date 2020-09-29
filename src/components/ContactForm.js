@@ -28,7 +28,7 @@ class ContactForm extends React.Component {
     console.log("ACA:");
     console.log(this.props.keyRoom);
     }
-  
+
   sendEmail(e) {
     e.preventDefault();
 
@@ -38,7 +38,7 @@ class ContactForm extends React.Component {
 
       .then((result) => {
           console.log(result.text);
-          alert("NOS2 PONDREMOS EN CONTACTO PRONTO, GRACIAS POR SU VISITA. Dudas: 0351-153220999.");  // display string message
+          alert("NOS PONDREMOS EN CONTACTO PRONTO, GRACIAS POR SU VISITA. Por dudas o consultas también puede comunicarse al: 0351-153220999. 0351-156744400.");  // display string message
 
       }, (error) => {
           console.log(error.text);
@@ -49,9 +49,9 @@ class ContactForm extends React.Component {
 
   }
 
- 
+
   handleFields = e => this.setState({ [e.target.name]: e.target.value });
- 
+
   static contextType = RoomContext;
 
   render() {

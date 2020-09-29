@@ -41,13 +41,8 @@ const Contacto = () => {
           <Link to="/" className="btn-primary">
             Volver al inicio
           </Link>
-
-
-
-
         </Banner>
       </Hero>
-
     </>
   );
 };

@@ -6,7 +6,7 @@ import { RoomContext } from "../context";
 
 import StyledHero from "../components/StyledHero";
 export default class SingleRoom extends Component {
-  
+
   constructor(props) {
     super(props);
     console.log(this.props);
@@ -17,9 +17,6 @@ export default class SingleRoom extends Component {
   }
   static contextType = RoomContext;
 
-  // componentDidMount() {
-  //   console.log(this.props);
-  // }
   render() {
     const { getRoom } = this.context;
     const room = getRoom(this.state.slug);
@@ -44,7 +41,7 @@ export default class SingleRoom extends Component {
       pets,
       images
     } = room;
-    // eslint-disable-next-line
+    
     const [main, ...defaultImages] = images;
     
     return (
