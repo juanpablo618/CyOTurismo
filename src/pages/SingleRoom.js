@@ -42,7 +42,7 @@ export default class SingleRoom extends Component {
       images
     } = room;
     
-    const [main, ...defaultImages] = images;
+    const [, ...defaultImages] = images;
     
     return (
       <>
