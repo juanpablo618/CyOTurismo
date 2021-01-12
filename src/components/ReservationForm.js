@@ -1,6 +1,7 @@
 import React from "react";
 import { RoomContext } from "../context";
 import emailjs from 'emailjs-com';
+import 'whatsapp-button/whatsapp-button.js';
 
 class ReservationForm extends React.Component {
 
@@ -20,6 +21,8 @@ class ReservationForm extends React.Component {
     componentDidMount() {
     console.log("ACA:");
     console.log(this.props.keyRoom);
+    console.log(this.state);
+    
     }
   
   sendEmail(e,self) {
@@ -81,6 +84,8 @@ class ReservationForm extends React.Component {
         <textarea name="serviciosAdicionales" id="serviciosAdicionales" onChange={this.handleFields}></textarea><br></br><br></br>
 
         <button type="submit" className="btn-primary">Enviar</button>
+        <br></br><br></br>
+        <whatsapp-button phone="3513220999" dialcode="54" text={'hola estoy averiguando por : '+this.props.keyRoom} label="Comenzar a chatear"></whatsapp-button>
       </form>
       <br></br>
       </center>

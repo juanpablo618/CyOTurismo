@@ -63,6 +63,8 @@ class ContactForm extends React.Component {
             <p><img src={facebookIcon} alt="facebook CyO Turismo" width="20" height="20" />  Facebook: CyO-Turismo</p>
             <p><img src={instagramIcon} alt="Instagram CyO Turismo" width="20" height="20" />Instagram: cyoturismo</p>
             <p><img src={phoneIcon} alt="telefono CyO Turismo" width="20" height="20" />Teléfono: 0351-153220999</p>
+            <p><img src={phoneIcon} alt="telefono CyO Turismo" width="20" height="20" />Teléfono: 0351-154744400</p>
+            
           </center>
           <center>
             

@@ -15,6 +15,7 @@
     "react-scripts": "^3.4.3",
     "styled-components": "^4.4.1",
     "typescript": "^3.9.7",
+    "whatsapp-button": "^1.0.14",
     "yarn": "^1.22.0"
   },
   "scripts": {
