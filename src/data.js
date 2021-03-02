@@ -215,7 +215,7 @@ export default [
       name: "Doble / H. La porteña / Villa la Serranita",
       slug: "doble-standard",
       type: "doble",
-      price: 2300,
+      price: 3300,
       size: 100,
       capacity: 2,
       pets: true,
