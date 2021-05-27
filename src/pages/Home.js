@@ -10,7 +10,7 @@ const home = () => {
       <Hero>
         <Banner
           title="Alojamientos en Córdoba"
-          subtitle="tenemos todas las opciones para su comodidad no dudes en comunicarte"
+          subtitle="tenemos todas las opciones para su comodidad. Departamentos Temporarios en Córdoba"
         >
           <Link to="/rooms" className="btn-primary">
             Nuestros Alojamientos

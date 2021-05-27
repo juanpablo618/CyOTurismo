@@ -7,8 +7,6 @@ import facebookIcon from "../images/facebookIcon.png";
 import instagramIcon from "../images/instagramIcon.png";
 import phoneIcon from "../images/phoneIcon.png";
 
-
-
 class ContactForm extends React.Component {
 
   constructor(props){
@@ -24,15 +22,8 @@ class ContactForm extends React.Component {
     };
   }
 
-    componentDidMount() {
-    console.log("ACA:");
-    console.log(this.props.keyRoom);
-    }
-
   sendEmail(e) {
     e.preventDefault();
-
-    console.log(e);
 
     emailjs.sendForm('service_x5jr1re', 'template_czOUzjOc', e.target, 'user_58UT0Oeu5MmFFx61uWkmG')
 
@@ -42,7 +33,7 @@ class ContactForm extends React.Component {
 
       }, (error) => {
           console.log(error.text);
-          alert("No2 fue posible el envio de su mensaje. Puede hacerlo a través de los teléfonos: 0351-153220999 / 0351-156744400.");  // display string message
+          alert("No fue posible el envio de su mensaje. Puede hacerlo a través de los teléfonos: 0351-153220999 / 0351-156744400.");  // display string message
 
       });
 
@@ -70,16 +61,16 @@ class ContactForm extends React.Component {
             
             <form onSubmit={(e)=>this.sendEmail(e)}>
                 <label htmlFor="from_name">Nombre y apellido:</label><br></br>
-                <input  id="from_name" name="from_name" required="true" onChange={this.handleFields}/><br></br><br></br>
+                <input className="campos" id="from_name" name="from_name" required="true" onChange={this.handleFields}/><br></br><br></br>
 
                 <label htmlFor="from_name">Teléfono:</label><br></br>
-                <input  id="telefono" name="telefono" required="true" onChange={this.handleFields}/><br></br><br></br>
+                <input className="campos" id="telefono" name="telefono" required="true" onChange={this.handleFields}/><br></br><br></br>
 
                 <label htmlFor="from_name">Email:</label><br></br>
-                <input  id="email" name="email" required="false" onChange={this.handleFields}/><br></br><br></br>
+                <input className="campos"  id="email" name="email" required="false" onChange={this.handleFields}/><br></br><br></br>
 
                 <label htmlFor="serviciosAdicionales">Mensaje:</label><br></br>
-                <textarea name="serviciosAdicionales" id="serviciosAdicionales" rows="15" cols="50" onChange={this.handleFields}></textarea><br></br><br></br>
+                <textarea name="serviciosAdicionales" id="serviciosAdicionales" rows="10" cols="70" onChange={this.handleFields}></textarea><br></br><br></br>
 
                 <button type="submit" className="btn-primary">Enviar</button>
             </form>

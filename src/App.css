@@ -514,4 +514,23 @@ h6 {
     max-width: 1170px;
   }
 }
+
+
+
 /* end of rooms fitler*/
+
+
+
+.campos {
+    font-family:Verdana,Helvetica;
+    font-size:12pt;
+    width: 500px;
+    color:#696969;
+    padding: 5px 7px 5px 7px;
+    border:1px solid #0000FF;
+    background:#FFF;
+    -webkit-border-radius: 25px;
+    -moz-border-radius: 25px;
+    border-radius: 15px;
+    text-align: center;
+}

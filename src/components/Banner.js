@@ -4,7 +4,7 @@ const Banner = ({ children, title, subtitle }) => {
     <div className="banner">
       <h1>{title}</h1>
       <div />
-      <p>{subtitle}</p>
+      <p><b>{subtitle}</b></p>
       {children}
     </div>
   );
