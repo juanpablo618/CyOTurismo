@@ -3,7 +3,7 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
-    "axios": "^0.19.2",
+    "axios": "^0.21.1",
     "caniuse-lite": "^1.0.30001125",
     "contentful": "^7.14.6",
     "csstools": "^0.1.5",
