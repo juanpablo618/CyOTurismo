@@ -22,7 +22,7 @@ const Contacto = () => {
           <p>Para todos aquellos huéspedes que lleguen por motivo de negocios, por estudios o por placer CyO Turismo buscará siempre la mejor opción para cada necesidad.</p>
 
           <p>Ubicación:</p>
-          <p>Colón 610 (solo con aviso previo) - Córdoba - Argentina</p>
+          <p>Ibarbalz 752 (solo con aviso previo) - Córdoba - Argentina</p>
 
           <p>Email: cyoturismo@gmail.com</p>
           
