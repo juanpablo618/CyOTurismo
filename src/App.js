@@ -11,7 +11,9 @@ import Navbar from "./components/Navbar";
 import { Switch, Route } from "react-router-dom";
 
 function App() {
+
   return (
+    
     <>
       <Navbar />
       <Switch>
@@ -22,6 +24,7 @@ function App() {
         <Route exact path="/contactForm/" component={ContactForm} />
         <Route exact path="/rooms/:slug" component={SingleRoom} />
         <Route component={Error} />
+        
       </Switch>
     </>
   );
