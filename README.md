@@ -71,3 +71,12 @@ This section has moved here: https://facebook.github.io/create-react-app/docs/tr
 ### when fail on netlify app and the master branch doesn't work
 
 Edit: I found the solution. I updated yarn and all peer dependencies that were missing; deleted my cache (public folder, node_modules folder, .cache folder) and the yarn.lock, ran yarn install once again, pushed all changes and the site finally deployed just fine.
+
+
+### when fail on start the app
+
+nvm list 
+nvm use  VERSION superior to 8.3
+
+
+
